@@ -1,0 +1,8 @@
+        <link rel="stylesheet" media="screen and (orientation: portrait) and 
+        (max-width:640px), projection" "href=»style.css" />
+        <link rel="stylesheet" media="screen and (orientation: portrait) and 
+        (max-width:1024px), projection" "href=»style.css" />
+        <link rel="stylesheet" media="screen and (orientation: portrait) and 
+        (min-width:1280px), projection" "href=»style.css" />
+        <link rel="stylesheet" media="screen and (orientation: portrait) and 
+        (max-width:640px), projection" "href=»style.css" />

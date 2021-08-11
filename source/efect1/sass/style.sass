@@ -1,0 +1,91 @@
+// colors
+$white: #ffffff
+$brand: #272D54
+$black: #000000
+$yellow: #FEB942
+$green: #96B61D
+
+body
+	font-family: 'Roboto', Arial, sans-serif
+	margin: 0
+	background: $yellow
+	overflow: hidden
+					
+	header
+		min-height: 10em
+		text-align: justify
+		box-sizing: border-box
+		padding: 1em
+		background: $brand
+		position: relative
+		overflow: hidden
+		text-shadow: 0 1px 0 rgba($black, 0.15)
+	
+		// THE EFFECT NODE - 'vw' is used to make sure the circle is always larger than the width of the screen and negative margin values make sure that it is perfectly centered
+		.circleEffect
+			width: 240vw
+			height: 240vw
+			margin-left: -120vw
+			margin-top: -120vw
+			border-radius: 100%
+			position: absolute
+			will-change: transform
+		
+		.links
+			display: flex
+			justify-content: space-around
+			z-index: 2
+			position: relative
+	
+			a
+				display: inline-block
+				text-transform: uppercase
+				color: $white
+				text-decoration: none
+				opacity: 0.75
+				padding: 0.5em 1em
+				float: left
+			
+				&:hover
+					background: rgba($white, 0.15)
+		
+				&.active
+					opacity: 1
+	
+	section
+		will-change: transform, opacity
+		margin: -2em 2em 2em
+		z-index: 2
+		width: calc(100% - 4em)
+		box-sizing: border-box
+		position: absolute
+	
+		&[hidden]
+			display: block
+			visibility: hidden
+		
+		article
+			background: $white
+			color: $brand
+			max-width: 600px
+			margin: 0 auto
+			padding: 0.5em 2em
+			border-radius: 3px
+			box-shadow: 0px 2px 5px 0px rgba($black, 0.15)
+	
+			p
+				color: $green
+			
+	
+@media all and (max-width: 600px)
+	body
+		section
+			margin-left: 0
+			margin-right: 0
+			width: 100%
+
+			article
+				border-radius: 0
+		
+				h2
+					font-size: 1.3em
