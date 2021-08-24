@@ -1,0 +1,12 @@
+<url>
+    <xhtml:link
+            rel="alternate"
+            hreflang="ru"
+            href="#"/> 
+    <xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="#"/>
+</url>
+
+<!--в хреф прописать урл переведённой страницы-->

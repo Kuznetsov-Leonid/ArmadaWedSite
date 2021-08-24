@@ -1,0 +1,84 @@
+.material-loading-effect {
+    font-family: "Roboto", Arial, sans-serif;
+    margin: 0;
+    background: #FEB942;
+    overflow: hidden;
+  }
+.material-loading-effect .header {
+    min-height: 10em;
+    text-align: justify;
+    box-sizing: border-box;
+    padding: 1em;
+    background: #272D54;
+    position: relative;
+    overflow: hidden;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
+  }
+.material-loading-effect .header .circleEffect {
+    width: 240vw;
+    height: 240vw;
+    margin-left: -120vw;
+    margin-top: -120vw;
+    border-radius: 100%;
+    position: absolute;
+    will-change: transform;
+}
+.material-loading-effect .header .links {
+    display: flex;
+    justify-content: space-around;
+    z-index: 2;
+    position: relative;
+}
+.material-loading-effect .header .links a {
+    display: inline-block;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none;
+    opacity: 0.75;
+    padding: 0.5em 1em;
+    float: left;
+  }
+  .material-loading-effect .header .links a:hover {
+    background: rgba(255, 255, 255, 0.15);
+  }
+  .material-loading-effect .header .links a.active {
+    opacity: 1;
+  }
+  .material-loading-effect .header #section {
+    will-change: transform, opacity;
+    margin: -2em 2em 2em;
+    z-index: 2;
+    width: calc(100% - 4em);
+    box-sizing: border-box;
+    position: absolute;
+  }
+  .material-loading-effect .header #section[hidden] {
+    display: block;
+    visibility: hidden;
+  }
+  .material-loading-effect .header #section article {
+    background: #ffffff;
+    color: #272D54;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0.5em 2em;
+    border-radius: 3px;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
+  }
+  .material-loading-effect .header #section article p {
+    color: #96B61D;
+  }
+  
+  @media all and (max-width: 600px) {
+    .material-loading-effect .header #section {
+      margin-left: 0;
+      margin-right: 0;
+      width: 100%;
+    }
+    .material-loading-effect .header #section article {
+      border-radius: 0;
+    }
+    .material-loading-effect .header #section article h2 {
+      font-size: 1.3em;
+    }
+}

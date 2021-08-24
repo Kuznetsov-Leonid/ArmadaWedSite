@@ -1,0 +1,169 @@
+@import "../sass/stale_header\(index\).scss";
+
+.infoBlock{
+    overflow: hidden;
+    flex-direction: column;
+    padding-top: 250px;
+    padding-left: 160px;
+    padding-right: 160px;
+    padding-bottom: 166px;
+    width: 100%;
+    .sub_infoBlock{
+        flex: auto;
+        padding: 15px 15px 15px 15px;
+        width: 100%;
+        H1{
+            text-align: -webkit-center;
+            width: 100%;
+            flex: auto;
+            font-family: -webkit-pictograph;
+            padding: 0px 0px 0px 0px;
+            margin: 0px 0px 0px 0px;
+            h3{
+                flex-direction: column;
+                width: 100%;
+                padding: 0px 0px 0px 0px;
+                margin: 15px 0px 15px 0px;
+                color: white;
+                font-size: xxx-large;
+                font-family: -webkit-pictograph;
+                h4{
+                    width: 100%;
+                    flex: auto;
+                    font-family: -webkit-pictograph;
+                    padding: 0px 0px 0px 0px;
+                    margin: 0px 0px 0px 0px;
+                    text-align: -webkit-center;
+                    color: white;
+                }
+            } 
+        }
+        .button1{
+            flex-direction: column;
+            padding: 0px 280px 0px 280px;
+            margin: 30px 220px 30px 220px;
+        }
+        button {
+            flex-direction: column;
+            height: auto;
+            width: auto;
+            border: none;
+            background: white;
+            color: #2c5f42;
+            padding: 10px;
+            font-size: 18px;
+            border-radius: 5px;
+            border-color: #2c5f42;
+            position: relative;
+            box-sizing: border-box;
+            transition: all 500ms ease; 
+        }
+        button:hover {
+            background: #2c5f42;
+            color: white;
+            box-shadow: inset 0 0 0 1px white;
+        }
+    }
+}
+#effect1{
+    width: 100%;
+    height: 720px;
+}
+#effect2{
+    width: 100%;
+    height: 720px;
+}
+#effect3{
+    width: 100%;
+    height: 720px;
+}
+
+
+.container2{
+  text-align: -webkit-left;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin:auto;
+  max-height:80px;
+}
+
+ul.submenu{
+  background-color: #212121;
+  border-radius:5px;
+  display:inline-grid;
+  padding:0px 0px;
+  margin:0px;
+  overflow:hidden;
+  li{
+    display:inline-block;
+    a{
+      i.fa{
+        padding:0px;
+        display:inline-block;
+        border:1px solid transparent;
+        color:#ccc;
+        height:30px;
+        width:30px;
+        border-radius:50px;
+        margin:10px;
+        text-align:center;
+        line-height:30px;
+        position: relative;
+        z-index:2;
+        &::after{
+          content:"";
+          height:0%;
+          width:0%;
+          position: absolute;
+          top: -500%;
+          bottom: -500%;
+          left: -500%;
+          right: -500%;
+          margin:auto;
+          border:0px solid transparent;
+          border-radius:200px;
+          opacity: 0;
+          z-index:-1;
+          transition:all ease 0.5s;
+        }
+      }
+      &:hover{
+        i.fa::before{
+          color:#fff;
+        }
+        i.fa-facebook::after{
+          height:200%;
+          width:200%;
+          background-color: rgb(59,89,152);
+          border-radius:0px;
+          opacity:1;
+        }
+        
+        i.fa-twitter::after{
+          height:200%;
+          width:200%;
+          background-color: rgb(29,202,255);
+          border-radius:0px;
+          opacity:1;
+        }
+        i.fa-google-plus::after{
+          height:200%;
+          width:200%;
+          background-color: rgb(211,72,54);
+          border-radius:0px;
+          opacity:1;
+        }
+        i.fa-instagram::after{
+          height:200%;
+          width:200%;
+          background-color: rgb(138,58,185);
+          border-radius:0px;
+          opacity:1;
+        }
+      }
+    }
+  }
+}

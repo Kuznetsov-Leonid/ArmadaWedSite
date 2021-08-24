@@ -1,0 +1,87 @@
+body {
+  font-family: "Roboto", Arial, sans-serif;
+  margin: 0;
+  background: #FEB942;
+  overflow: hidden;
+}
+body header {
+  min-height: 10em;
+  text-align: justify;
+  box-sizing: border-box;
+  padding: 1em;
+  background: #272D54;
+  position: relative;
+  overflow: hidden;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
+}
+body header .circleEffect {
+  width: 240vw;
+  height: 240vw;
+  margin-left: -120vw;
+  margin-top: -120vw;
+  border-radius: 100%;
+  position: absolute;
+  will-change: transform;
+}
+body header .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  z-index: 2;
+  position: relative;
+}
+body header .links a {
+  display: inline-block;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+  opacity: 0.75;
+  padding: 0.5em 1em;
+  float: left;
+}
+body header .links a:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+body header .links a.active {
+  opacity: 1;
+}
+body section {
+  will-change: transform, opacity;
+  margin: -2em 2em 2em;
+  z-index: 2;
+  width: calc(100% - 4em);
+  box-sizing: border-box;
+  position: absolute;
+}
+body section[hidden] {
+  display: block;
+  visibility: hidden;
+}
+body section article {
+  background: #ffffff;
+  color: #272D54;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0.5em 2em;
+  border-radius: 3px;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
+}
+body section article p {
+  color: #96B61D;
+}
+
+@media all and (max-width: 600px) {
+  body section {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+  body section article {
+    border-radius: 0;
+  }
+  body section article h2 {
+    font-size: 1.3em;
+  }
+}
